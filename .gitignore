@@ -1,0 +1,6 @@
+.Ulysses-Settings.plist
+
+/public
+.DS_Store
+.hugo_build.lock
+resources/_gen/
