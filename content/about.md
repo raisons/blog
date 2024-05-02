@@ -3,4 +3,5 @@ title: "关于"
 layout: about
 ---
 
-sadfasdf
+
+Email: raisonchan#wubie.dev

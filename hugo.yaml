@@ -95,6 +95,8 @@ params:
   socialIcons:
     - name: github
       url: "https://github.com/raisons"
+    - name: email
+      url: "mailto:raisonchan@wubie.dev"
     - name: KoFi
       title: Buy me a Ko-Fi :)
       url: "#"
@@ -154,8 +156,12 @@ menu:
       name: 搜索
       url: /search
       weight: 30
+    - identifier: friendlink
+      name: 友链
+      url: /friend-links
+      weight: 30
     - identifier: about
-      name: 关于
+      name: Me
       url: /about
       weight: 40
 # Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
