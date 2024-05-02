@@ -1,0 +1,20 @@
+<!-- Twikoo -->
+<div>
+    <details class="comments_details">
+        <summary style="cursor: pointer; margin: 50px 0 20px 0;width: 130px;">
+            <span style="font-size: 20px;color: var(--content);">评论</span>
+        </summary>
+        <div id="tcomment"></div>
+    </details>
+    <script src="https://cdn.staticfile.org/twikoo/{{ .Site.Params.twikoo.version }}/twikoo.all.min.js">
+    </script>
+    <script>
+        twikoo.init({
+            envId: {{ .Site.Params.twikoo.id }},
+        el: "#tcomment",
+            lang: 'zh-CN',
+            region: {{ .Site.Params.twikoo.region }},
+        path: window.TWIKOO_MAGIC_PATH||window.location.pathname,
+        })
+    </script>
+</div>
