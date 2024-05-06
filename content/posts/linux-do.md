@@ -127,11 +127,11 @@ class Discourse:
 
     def get_client(self):
         headers = copy.deepcopy(HEADERS)
-        headers["Referer"] = f"{self.domain}/"
+        headers["Referer"] = f"https://{self.domain}/"
         headers["Host"] = self.domain
         headers["X-CSRF-Token"] = self.conf["csrf-token"]
         client = httpx.AsyncClient(
-            base_url=self.domain,
+            base_url=f"https://{self.domain}",
             cookies=self.conf["cookies"],
             headers=headers
         )
@@ -260,7 +260,7 @@ class Discourse:
 
 
 if __name__ == '__main__':
-    d = Discourse("https://linux.do")
+    d = Discourse("linux.do")
     asyncio.run(d.run())
 
 ```
